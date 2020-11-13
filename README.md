@@ -1,25 +1,24 @@
 # Getting Started
 
-Welcome to your new project.
+Welcome to example project for using CAP on PostgreSQL.
+The related blog post is availe here: https://blogs.sap.com/?p=1221091
 
-It contains these folders and files, following our recommended project layout:
 
 File or Folder | Purpose
 ---------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
+`app/` | not used
+`db/` | the domain model
+`srv/` | the service model
+`test/` | the REST Client files
 `package.json` | project metadata and configuration
 `readme.md` | this getting started guide
 
 
-## Next Steps
+## Run the app
 
-- Open a new terminal and run `cds watch` 
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
-
-
-## Learn More
-
-Learn more at https://cap.cloud.sap/docs/get-started/.
+- Run from a terminal: `docker-compose up` 
+- Create the database (see: https://blogs.sap.com/?p=1221091)
+- Run from a terminal `npm i` 
+- Run from a terminal `npx cds-dbm deploy --load-via delta` 
+- Run from a terminal `cds serve` 
+- Open browser and go to http://localhost:4004
