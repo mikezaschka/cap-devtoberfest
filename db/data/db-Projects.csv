@@ -1,0 +1,5 @@
+ID,name,repository,language
+c682de2f-536b-44fe-acdd-6475d5660ca2,cds-dbm - Database deployment for PostgreSQL on CAP,https://github.com/mikezaschka/cds-dbm,Node.js
+5d1e6d61-3ad5-4813-9a67-1fd9df440f68,abapGit: Git client for ABAP,https://github.com/abapGit/abapGit,ABAP
+b6c36859-84c1-486b-9f32-a6a25513f3ba,abap-dev-utilities: ABAP Development Tools,https://github.com/jrodriguez-rc/abap-dev-utilities,ABAP
+2d7c145e-fd40-492f-8499-2dd21e3cf0fc,vscode_abap_remote_fs: Remote filesystem for ABAP systems,https://github.com/marcellourbani/vscode_abap_remote_fs,ABAP

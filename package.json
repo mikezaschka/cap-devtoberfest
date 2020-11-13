@@ -8,7 +8,7 @@
   "dependencies": {
     "@sap/cds": "4.3.0",
     "cds-dbm": "0.0.10",
-    "cds-pg": "0.0.21",
+    "cds-pg": "0.0.22",
     "express": "^4"
   },
   "cds": {
@@ -45,6 +45,7 @@
     }
   },
   "scripts": {
-    "start": "npx cds run"
+    "start": "npx cds run",
+    "start:docker": "docker-compose up"
   }
 }
