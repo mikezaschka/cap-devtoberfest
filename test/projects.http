@@ -1,0 +1,20 @@
+
+### Create entity
+POST http://localhost:4004/public/Projects
+Content-Type: application/json
+
+{
+    "name": "cds-pg - PostgreSQL adapter for SAP CDS (CAP)",
+    "repository": "https://github.com/sapmentors/cds-pg",
+    "language": "Node.js"
+}
+
+### Create another entity
+POST http://localhost:4004/public/Projects
+Content-Type: application/json
+
+{
+    "name": "cds-dbm - Database deployment for PostgreSQL on CAP",
+    "repository": "https://github.com/mikezaschka/cds-dbm",
+    "language": "Node.js"
+}
