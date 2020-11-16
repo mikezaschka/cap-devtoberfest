@@ -1,7 +1,7 @@
 # Getting Started
 
 Welcome to example project for using CAP on PostgreSQL.
-The related blog post is availe here: https://blogs.sap.com/?p=1221091
+The related blog post is availe here: https://blogs.sap.com/2020/11/16/getting-started-with-cap-on-postgresql-node.js/
 
 
 File or Folder | Purpose
@@ -17,7 +17,7 @@ File or Folder | Purpose
 ## Run the app
 
 - Run from a terminal: `docker-compose up` 
-- Create the database (see: https://blogs.sap.com/?p=1221091)
+- Create the database (see: https://blogs.sap.com/2020/11/16/getting-started-with-cap-on-postgresql-node.js/)
 - Run from a terminal `npm i` 
 - Run from a terminal `npx cds-dbm deploy --load-via delta` 
 - Run from a terminal `cds serve` 
