@@ -6,12 +6,30 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap/cds": "4.3.0",
-    "cds-dbm": "0.0.10",
-    "cds-pg": "0.0.22",
+    "@sap/cds": "4.3.1",
+    "cds-dbm": "~0.0.17",
+    "cds-pg": "0.0.30",
     "express": "^4"
   },
+  "devDependencies": {
+    "mbt": "~1.0.16"
+  },
   "cds": {
+    "build": {
+      "tasks": [
+        {
+          "use": "node-cf",
+          "src": "srv"
+        },
+        {
+          "use": "postgres-cf",
+          "src": "db",
+          "options": {
+            "deployCmd": "npx cds-dbm deploy --load-via delta --auto-undeploy"
+          }
+        }
+      ]
+    },
     "requires": {
       "db": {
         "kind": "database"
@@ -20,14 +38,7 @@
         "impl": "cds-pg",
         "model": [
           "srv"
-        ],
-        "credentials": {
-          "host": "localhost",
-          "port": 5432,
-          "database": "devtoberfest",
-          "user": "postgres",
-          "password": "postgres"
-        }
+        ]
       }
     },
     "migrations": {
@@ -46,6 +57,8 @@
   },
   "scripts": {
     "start": "npx cds run",
-    "start:docker": "docker-compose up"
+    "start:docker": "docker-compose up",
+    "build:cf": "mbt build",
+    "deploy:cf": "cf deploy mta_archives/devtoberfest_1.0.0.mtar"
   }
 }
