@@ -1,24 +1,38 @@
-# Getting Started
+# Example project showcasing how to use SAP CAP on PostgreSQL
 
-Welcome to example project for using CAP on PostgreSQL.
-The related blog post is availe here: https://blogs.sap.com/2020/11/16/getting-started-with-cap-on-postgresql-node.js/
+Please read the following blog post for advanced instructions:
+* https://blogs.sap.com/2020/11/16/getting-started-with-cap-on-postgresql-node.js/
 
-
-File or Folder | Purpose
----------|----------
-`app/` | not used
-`db/` | the domain model
-`srv/` | the service model
-`test/` | the REST Client files
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
-
-
-## Run the app
+## Run the app locally
 
 - Run from a terminal: `docker-compose up` 
-- Create the database (see: https://blogs.sap.com/2020/11/16/getting-started-with-cap-on-postgresql-node.js/)
 - Run from a terminal `npm i` 
-- Run from a terminal `npx cds-dbm deploy --load-via delta` 
+- Create a default-env.json file in the root of the project and insert the following content:
+
+```
+{
+    "VCAP_SERVICES": {
+      "postgres": [
+        {
+          "name": "postgres",
+          "label": "postgres",
+          "tags": [
+            "postgres",
+            "database"
+          ],
+          "credentials": {
+            "host": "localhost",
+            "port": 5432,
+            "database": "devtoberfest",
+            "user": "postgres",
+            "password": "postgres",
+            "schema": "public"
+          }
+        }
+      ]
+    }
+  }
+```
+- Run from a terminal `npx cds-dbm deploy -create-db --load-via delta` 
 - Run from a terminal `cds serve` 
 - Open browser and go to http://localhost:4004

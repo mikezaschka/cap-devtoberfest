@@ -6,9 +6,9 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap/cds": "4.3.0",
-    "cds-dbm": "0.0.10",
-    "cds-pg": "0.0.22",
+    "@sap/cds": "4.3.1",
+    "cds-dbm": "0.0.17",
+    "cds-pg": "0.0.30",
     "express": "^4"
   },
   "cds": {
