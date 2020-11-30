@@ -40,6 +40,6 @@ Please read the following blog post for advanced instructions:
 
 ## Deploy to SAP Cloud Platform Cloud Foundry
 
-- Setup the trial account (<insert link to blog post>)
+- Setup the trial account (checkout the steps described here: https://blogs.sap.com/2020/11/30/run-and-deploy-cap-with-postgresql-on-sap-cloud-platform-cloud-foundry-node.js/)
 - Run from a terminal: `npm run build:cf` 
 - Run from a terminal: `npm run deploy:cf`
