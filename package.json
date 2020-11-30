@@ -7,7 +7,7 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "4.3.1",
-    "cds-dbm": "0.0.17",
+    "cds-dbm": "0.0.18",
     "cds-pg": "0.0.30",
     "express": "^4"
   },
