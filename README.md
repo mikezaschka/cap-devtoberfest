@@ -2,7 +2,7 @@
 
 Please read the following blog post for advanced instructions:
 * https://blogs.sap.com/2020/11/16/getting-started-with-cap-on-postgresql-node.js/
-* <will be added soon>
+* https://blogs.sap.com/2020/11/30/run-and-deploy-cap-with-postgresql-on-sap-cloud-platform-cloud-foundry-node.js/
 
 ## Run the app locally
 
