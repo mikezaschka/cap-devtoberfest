@@ -6,23 +6,25 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap/cds": "4.6.4",
-    "cds-dbm": "~0.0.24",
-    "cds-pg": "0.0.41",
+    "@sap/cds": "5.1.5",
+    "cds-dbm": "~0.0.26",
+    "cds-pg": "0.0.51",
     "express": "^4"
   },
   "devDependencies": {
-    "mbt": "~1.1.0"
+    "mbt": "~1.2.1"
   },
   "cds": {
     "build": {
       "tasks": [
         {
           "use": "node-cf",
+          "for": "node-cf",
           "src": "srv"
         },
         {
           "use": "postgres-cf",
+          "for": "postgres-cf",
           "src": "db",
           "options": {
             "deployCmd": "npx cds-dbm deploy --load-via delta --auto-undeploy"
