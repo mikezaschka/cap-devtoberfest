@@ -23,7 +23,7 @@
           "src": "srv"
         },
         {
-          "use": "postgres-cf",
+          "use": "cds-dbm/dist/build/postgres-cf",
           "for": "postgres-cf",
           "src": "db",
           "options": {
