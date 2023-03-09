@@ -6,9 +6,9 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap/cds": "5.1.5",
-    "cds-dbm": "~0.0.26",
-    "cds-pg": "0.0.51",
+    "@sap/cds": "~6.6.1",
+    "cds-dbm": "~0.1.3",
+    "cds-pg": "~0.1.35",
     "express": "^4"
   },
   "devDependencies": {
@@ -23,7 +23,7 @@
           "src": "srv"
         },
         {
-          "use": "postgres-cf",
+          "use": "cds-dbm/dist/build/postgres-cf",
           "for": "postgres-cf",
           "src": "db",
           "options": {
@@ -34,9 +34,10 @@
     },
     "requires": {
       "db": {
-        "kind": "database"
+        "kind": "postgres",
+        "dialect": "plain"
       },
-      "database": {
+      "postgres": {
         "impl": "cds-pg",
         "model": [
           "srv"
