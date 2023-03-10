@@ -56,4 +56,6 @@ resources:
       service-plan: trial
       skip-service-updates:
         parameters: true
+      service-tags:
+        - plain
     type: org.cloudfoundry.managed-service
