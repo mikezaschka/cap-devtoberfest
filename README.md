@@ -1,3 +1,9 @@
+⚠️ 
+
+This example application repository is in 🌇-mode since with there is now [an official CAP PostgreSQL adapter](https://github.com/cap-js/cds-dbs/tree/main/postgres) available that should be used in favor of `cds-pg` and `cds-dbm`.
+
+⚠️ 
+
 # Example project showcasing how to use SAP CAP on PostgreSQL
 
 Please read the following blog post for advanced instructions:
